@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Home</title>
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta
+    name="description"
+    content="Web site created using create-react-app"
+  />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font awesome link -->
+  <script
+    src="https://kit.fontawesome.com/0f6749eff1.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Bootstrap cdn link -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm fixed-top">
+    <div class="container-fluid nav-cont">
+      <div class="nav-child1">
+        <a class="navbar-brand" href="/">
+          <img class="logo logo1" src="img/logo.png" alt="LOGO">
+          <!-- <img class="logo logo2" src="tire.svg" alt=""> -->
+        </a>
+      </div>
+
+      <div class="nav-child2a">
+        <button class="navbar-toggler" type="button" onclick="toggleNav()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="/#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Gallery ">Gallery </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Store">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Academy ">Academy </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav-child2b">
+        <div class="hamburger-icon" id="icon" onclick="toggleNav()">
+          <div class="icon-1" id="a"></div>
+          <div class="icon-2" id="b"></div>
+          <div class="icon-3" id="c"></div>
+        </div>
+
+        <div id="nav" class="">
+          <ul class="ul">
+            <li class="li li1">
+              <a href="/">Home</a>
+            </li>
+            <li class="li li2">
+              <a href="/about">About</a>
+            </li>
+            <li class="li li3">
+              <a href="#Gallery">Gallery</a>
+            </li>
+            <li class="li li4">
+              <a href="#Store">Store</a>
+            </li>
+            <li class="li li5">
+              <a href="/Academy ">Academy </a>
+            </li>
+            <li class="li">
+              <button class="sign"><a href="/signup">Sign up ></a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav-child3">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <i class="fa-regular fa-circle-user account"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/LoginForm">Register</a>
+            <a href="/signup">Sign-In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="front">
+    <img class="back" src="img/back_n.png" alt="">
+    <div class="front-child1">
+      <h1>
+        some text
+        <span> hear hear!</span>
+      </h1>
+      <button class="order">
+        <a href="/viewGallery">View Gallery</a>
+      </button>
+      <button class="view">
+        <a href="/signup">Get Incorporated</a>
+      </button>
+    </div>
+    <div class="front-child2">
+      <img class="hero hero1" src="img/hero.svg" alt="/" style="width:100%; height:452px;">
+      <img class="hero hero2" src="img/hero.svg" alt="/" style="width:319px; height:121.86px;">
+    </div>
+  </div>
+  <div class="project" id="project">
+    <img class="back2" src="back_n2.png" alt="">
+    <div class="prod-cont">
+        <div class="pro-child1">
+            <div class="pro1-topic">
+                <h1>TOP students</h1>
+                <img src="img/hr.svg" alt="">
+                <p>“some of top students</p>
+            </div>
+            <div class="ca1-main">
+                <div class="ca1-main-child">
+                    <div class="ca-cont1">
+                        <img class="f1-car" src="img/unknown.jpg" alt="">
+                    </div>
+                    <div class="ca-cont2">
+                        <h1>Name</h1>
+                        <hr>
+                        <div class="ca-info-cont">
+                            <p>class</p>
+                            <p>result</p>
+                        </div>
+                        <ul>
+                            <li>some description</li>
+                            
+                        </ul>
+                        <button onclick="clickHandler('A')" class="feature-btn" id="btnA">
+                            <a href="#more">READ MORE</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="ca1-main-child">
+                    <div class="ca-cont1">
+                        <img class="f1-car" src="img/unknown.jpg" alt="">
+                    </div>
+                    <div class="ca-cont2">
+                        <h1>Name</h1>
+                        <hr>
+                        <div class="ca-info-cont">
+                            <p>class</p>
+                            <p>result</p>
+                        </div>
+                        <ul>
+                            <li>some description</li>
+                            
+                        </ul>
+                        <button onclick="clickHandler('A')" class="feature-btn" id="btnA">
+                            <a href="#more">READ MORE</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="ca1-main-child">
+                    <div class="ca-cont1">
+                        <img class="f1-car" src="img/unknown.jpg" alt="">
+                    </div>
+                    <div class="ca-cont2">
+                        <h1>Name</h1>
+                        <hr>
+                        <div class="ca-info-cont">
+                            <p>class</p>
+                            <p>result</p>
+                        </div>
+                        <ul>
+                            <li>some description</li>
+                            
+                        </ul>
+                        <button onclick="clickHandler('A')" class="feature-btn" id="btnA">
+                            <a href="#more">READ MORE</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- Repeat for other students -->
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div id="testimonials" class="testimonial">
+    <div class="testim-child1">
+        <h1>top Teachers</h1>
+        <img src="img/hr.svg" class="hr" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nisi vero commodi iste?</p>
+    </div>
+    <div class="testim-child2">
+        <div class="testim-cont">
+            <div class="testim-descr-cont">
+                <i class="fa-solid fa-quote-right" style="color: #ffffff;"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis maiores doloremque non maxime consequuntur assumenda aperiam distinctio dolore tenetur obcaecati dolorem, harum architecto pariatur cum tempora id nulla! Reiciendis quisquam rem, excepturi eos dolore sunt assumenda harum nulla non.</p>
+            </div>
+            <div class="photo-cont">
+                <div>
+                    <img src="img/unknown.jpg" class="photo" alt="">
+                </div>
+                <div>
+                    <p class="name">name</p>
+                    <p class="profess">Position</p>
+                    <img src="stars2.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="testim-cont">
+            <div class="testim-descr-cont">
+                <i class="fa-solid fa-quote-right" style="color: #ffffff;"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, eius? Quidem tempore accusantium quis exercitationem nulla voluptate repudiandae dolorem cupiditate?</p>
+            </div>
+            <div class="photo-cont">
+                <div>
+                    <img src="img/unknown.jpg" class="photo" alt="">
+                </div>
+                <div>
+                    <p class="name">Name</p>
+                    <p class="profess">Position</p>
+                    <img src="stars.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact">
+    <div class="contc-cont">
+        <form class="contc-form" id="contactForm">
+            <div id="successMessage" style="display: none;">
+                <img src="img/check.png" alt="">
+                <p>Sent successfully!</p>
+            </div>
+            <label for="name">Name<b>*</b></label>
+            <input type="text" placeholder="Enter Your Name" name="user_name" id="name">
+            <label for="email">Email<b>*</b></label>
+            <input type="email" placeholder="Enter Email Address" name="user_email" id="email">
+            <label for="textarea">Textarea<b>*</b></label>
+            <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Write Your Message Here..."></textarea>
+            <input type="submit" value="Send">
+        </form>
+        <div class="contc-descrp">
+            <h1>Need additional information?</h1>
+            <p>Got questions? We've got answers. You've come to the right place for all the answers. Our team is here to help you navigate through any questions you may have, providing clear and straightforward information.</p>
+            <div class="info-cont">
+                <i class="fa-solid fa-square-phone"></i>
+                <p>(251) 0000000000000</p>
+            </div>
+            <div class="info-cont">
+                <i class="fa-regular fa-envelope"></i>
+                <p>lorem@gmail.com</p>
+            </div>
+            <div class="info-cont">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Addis Ababa, Ethiopia</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer" style="background-color:#dadada;">
+    <div class="footer-childs">
+        <h1>Title</h1>
+        <p>Your Idea To Reality</p>
+        <div class="info-cont">
+            <i class="fa-solid fa-square-phone"></i>
+            <p>+251 0000000</p>
+        </div>
+        <div class="info-cont">
+            <i class="fa-regular fa-envelope"></i>
+            <p>Email</p>
+        </div>
+        <div class="social-cont">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+    <div class="footer-childs">
+        <h1>SUBSCRIPTION</h1>
+        <p>Subscribe your Email address for latest news & updates.</p>
+        <form class="footer-form" id="footerForm">
+            <input type="email" placeholder="Enter Email Address" name="user_email">
+            <input type="submit" value="Send">
+        </form>
+        <div id="confirmMessage" style="display: none;" class="confirm-cont">
+            <img src="check.png" alt="">
+            <p>Subscribed successfully!</p>
+        </div>
+    </div>
+    <p class="copy">©2024, Title. All rights reserved.</p>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
